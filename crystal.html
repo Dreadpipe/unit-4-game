@@ -10,74 +10,70 @@
         <link rel="stylesheet" type="text/css" href="assets/css/style.css">
         <!--jQuery goes here-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <title>Crystal Game</title>
+        <title>Ninja Turtle Combat Counter</title>
     </head>
-    <body>
+    <body class="p-3 mb-2 bg-secondary text-white">
         <!--This is my page header, says game title, just banner-->
+        <!--Eventually add nav bar to return to home page, or add as a themed button within game-->
         <div class="container">
             <div class="row">
-                <div class="header">
-                    <!--Insert header deets here-->
+                <div class="col-8 mx-auto jumbotron text-center align-self-center p-3 mb-2 bg-dark text-white h-50 w-75">
+                    <!--Change fonts and colors; maybe greens, blocky text-->
+                    <p class="mx-auto text-center">NINJA TURTLES COMBAT COUNTER</p>
+                    <section>
+                        <p>The Turtles are boasting over which bro has defeated the most Foot Soldiers!  Only Master Splinter knows the truth.  Help Master Splinter stop the bickering by adding up the Turtles' scores!
+                        </p>
+                        <p>The four Ninja Turtles are below.  By clicking on a turtle you will add a specific amount of points to your total score.</p>
+                        <p>You win the game by matching your total score to Master Splinter's. </p>
+                    </section>
+                </div>
                 </div>
             </div>
         </div>
-        <!--This is either a jumbotron, or a big container which displays game rules-->
-        <div class="container">
-            <div class="row">
-                <section class="myjumbo">
-                    <p>Test words
-
-                    </p>
-                </section>
-            </div>
-        </div>
-        <!--Here we have four crystals, which act as buttons-->
+        <!--Here we have four ninja turtles, which act as buttons-->
+        <!--Will using bootstrap margins to space evenly, but should make empty containers?-->
+        <!--fix columns to make responsive- "col" won't do-->
         <div class="container">
             <div class="row">
                 <!--four items in this row, crystals or whathaveyou, each includes specific id to call later-->
-                <div class="card" style="width: 18rem;">
-                        <img src="..." class="card-img-top" alt="...">
+                <!--Mobile responsiveness necessary here, currently misbehaves on any lower size remember: "col won't do"-->
+                    <div class="col-2 mx-auto card p-3 mb-2 bg-dark text-white h-25" style="width: 18rem;">
+                        <img src="assets/images/leo.png" class="card-img-top w-50 h-50 mx-auto" alt="...">
                             <div class="card-body">
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <p class="card-text text-center" id="leo">Leo!</p>
                             </div>
                     </div>
-                    <div class="card" style="width: 18rem;">
-                        <img src="..." class="card-img-top" alt="...">
+                    <div class="col-2 mx-auto card p-3 mb-2 bg-dark text-white h-25" style="width: 18rem;">
+                        <img src="assets/images/donny.png" class="card-img-top w-50 h-50 mx-auto" alt="...">
                             <div class="card-body">
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <p class="card-text text-center" id="donny">Donny!</p>
                             </div>
                     </div>
-                    <div class="card" style="width: 18rem;">
-                        <img src="..." class="card-img-top" alt="...">
+                    <div class="row">
+                        <div class="col-6 mx-auto card p-3 mb-2 bg-dark text-white" style="width: 18rem;">
+                            <img src="assets/images/splint.png" class="card-img-top h-50 w-50 mx-auto" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text text-center" id="splint">Master Splinter:</p>
+                                    <p class="random text-center">50</p>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="col-2 mx-auto card p-3 mb-2 bg-dark text-white h-25" style="width: 18rem;">
+                        <!--Raph has a style-px active atm, quick fix but not a perfect one-->
+                        <img src="assets/images/raph.png" class="card-img-top mx-auto" style="width: 130px" alt="...">
                             <div class="card-body">
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <p class="card-text text-center" id="raph">Raph!</p>
                             </div>
                     </div>
-                    <div class="card" style="width: 18rem;">
-                        <img src="..." class="card-img-top" alt="...">
+                    <div class="col-2 mx-auto card p-3 mb-2 bg-dark text-white h-25" style="width: 18rem;">
+                        <!--Mike has a style-px active atm, quick fix but not a perfect one-->
+                        <img src="assets/images/mike.gif" class="card-img-top mx-auto" style="width: 122px" alt="...">
                             <div class="card-body">
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <p class="card-text text-center" id="mikey">Mikey!</p>
                             </div>
                     </div>
             </div>
         </div>
-        <!--This is probably three cards, a win, loss, and number counter-->
-        <div class="container">
-            <div class="row">
-                <div>
-                    <!--Wins, Tiny Knight-->
-                </div>
-                <div>
-                    <!--Number counter-->
-                </div>
-                <div>
-                    <!--Losses, Brain Man?  Something different!-->
-                </div>
-            </div>
-        </div>
-        <!--Something else here?  Maybe a timer, for no particular reason?-->
-        <!--Page otherwise ends-->
-
         <!--My jQuery goes here-->
         <script src ="assets/js/game.js"></script>
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
