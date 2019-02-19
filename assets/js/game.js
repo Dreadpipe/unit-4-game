@@ -9,8 +9,9 @@ $(document).ready(function() {
 //$("#splint").click(intialize)
 
 // I need a variable that stores a random number between 19 and 120
+// I need a variable that stores the players overall score
 const randomNum =  Math.floor(Math.random() * 100) + 19
-
+let counter = 0
 // I need to assign that number to Master Splinter
 $("#random").html(randomNum)
 
@@ -22,6 +23,15 @@ const ninjaNum =  Math.floor(Math.random() * 12) + 1
 // Then, I need to create a click a function
 // that stores that value as the user clicks that turtle
 
+// Something is not quite right with this function
+$(".turtle").click(); {
+    let turtValue = $(this);
+    turtValue = parseInt(turtValue);
+    counter += turtValue;
+    console.log(ninjaNum)
+
+
+}
 
 // I need to display the user's clicked score vs the random score
 
