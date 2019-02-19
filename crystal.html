@@ -3,8 +3,9 @@
     <head>
         <meta lang="en-us">
         <meta charset="UTF-8">
-        <!--Below viewport doesn't work for some reason?-->
-        <!-- <meta name="viewport" content="width=device-width, initial scale=1"> -->
+        <!--Below viewport doesn't work for some reason? May have fixed with 1.0-->
+        <!--Site is nowhere near fully responsive-->
+        <meta name="viewport" content="width=device-width, initial scale=1.0">
         <link rel="stylesheet" type="text/css" href="assets/css/normalize.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="assets/css/style.css">
@@ -18,7 +19,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-8 mx-auto jumbotron text-center align-self-center p-3 mb-2 bg-dark text-white h-50 w-75">
-                    <!--Change fonts and colors; maybe greens, blocky text-->
+                    <!--Change fonts and colors; maybe greens, blocky font-->
                     <p class="mx-auto text-center">NINJA TURTLES COMBAT COUNTER</p>
                     <section>
                         <p>The Turtles are boasting over which bro has defeated the most Foot Soldiers!  Only Master Splinter knows the truth.  Help Master Splinter stop the bickering by adding up the Turtles' scores!
@@ -26,7 +27,6 @@
                         <p>The four Ninja Turtles are below.  By clicking on a turtle you will add a specific amount of points to your total score.</p>
                         <p>You win the game by matching your total score to Master Splinter's. </p>
                     </section>
-                </div>
                 </div>
             </div>
         </div>
@@ -53,8 +53,9 @@
                             </div>
                     </div>
                     <div class="row">
+                        <!--Enlarge random number to fit expanded card; call out-->
                         <div class="col-6 mx-auto card p-3 mb-2 bg-dark text-white" style="width: 18rem;">
-                            <img src="assets/images/splint.png" class="card-img-top h-50 w-50 mx-auto" alt="...">
+                            <img src="assets/images/splint.png" class="card-img-top h-50 w-75 mx-auto" alt="...">
                                 <div class="card-body">
                                     <p class="card-text text-center" id="splint">Master Splinter:</p>
                                     <p class="text-center" id="random"></p>

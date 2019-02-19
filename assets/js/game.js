@@ -1,4 +1,4 @@
-// This is a grandparent function that holds my jQuery/javascript
+// This is a kind of grandparent function that holds my jQuery/javascript
 // I need this so the document(html) properly loads before executing my programs
 $(document).ready(function() {
 
@@ -12,7 +12,10 @@ $(document).ready(function() {
 // I need a variable that stores the players overall score
 const randomNum =  Math.floor(Math.random() * 100) + 19
 let counter = 0
-// I need to assign that number to Master Splinter
+let wins = 0
+let losses = 0
+
+// I need to assign the random number to Master Splinter
 $("#random").html(randomNum)
 
 // I need to create a variable that stores a random number between 1 and 12
@@ -24,10 +27,13 @@ const ninjaNum =  Math.floor(Math.random() * 12) + 1
 // that stores that value as the user clicks that turtle
 
 // Something is not quite right with this function
+// Do I need to name it?  Something is off
 $(".turtle").click(); {
+    // is "this" called correctly?  I think so, but it's missing something
     let turtValue = $(this);
     turtValue = parseInt(turtValue);
     counter += turtValue;
+    // trying to console.log clicks, not getting anything
     console.log(ninjaNum)
 
 
@@ -38,7 +44,19 @@ $(".turtle").click(); {
 // I need to create a win condition, in which the user matches the score
 // and I need to create a lose condition, in which the user exceeds the score
 
+if (counter === randomNum) {
+    wins++
+    //change text of jumbotron to display victory message
+    //game will need to initiate here, win or lose
+}
+    //specific condition for if user exceeds score
+else if (counter >= randomNum) {
+    losses++
+    //change text of jumbotron to display loss message
+}
+
 // I need to display the user's total wins and losses
+//  which means I need a win and lose variable
 
 
 
