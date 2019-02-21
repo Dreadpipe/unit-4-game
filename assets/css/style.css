@@ -1,0 +1,25 @@
+
+/*No bootstrap for purple*/
+.donny {
+    background: purple;
+}
+
+/*adding personal border, will ultimately use BS, just testing;
+custom CSS conflicts*/
+.border {
+    border-width: 3px, black;
+}
+
+.turtName {
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 1.5rem;
+}
+
+#splint {
+    font-family: 'Saira Extra Condensed', sans-serif;
+    font-size: 1.5rem;
+}
+
+.myJumbo {
+    font-family: 'Saira Extra Condensed', sans-serif;
+}

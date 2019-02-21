@@ -4,28 +4,31 @@
         <meta lang="en-us">
         <meta charset="UTF-8">
         <!--Below viewport doesn't work for some reason? May have fixed with 1.0-->
-        <!--Site is nowhere near fully responsive-->
+        <!--SITE HAS BAD RESPONSIVENESS, NEED TO CORRECT COLUMNS FOR EACH VIEWPORT-->
         <meta name="viewport" content="width=device-width, initial scale=1.0">
         <link rel="stylesheet" type="text/css" href="assets/css/normalize.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+        <!--My new font goes here-->
+        <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy|Saira+Extra+Condensed" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="assets/css/style.css">
         <!--jQuery goes here-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <title>Ninja Turtle Combat Counter</title>
     </head>
-    <body class="p-3 mb-2 bg-secondary text-white">
-        <!--This is my page header, says game title, just banner-->
+    <body class="p-3 mb-2 bg-success text-white">
+        <!--Change your fonts, make 'em fun-->
         <!--Eventually add nav bar to return to home page, or add as a themed button within game-->
         <div class="container">
             <div class="row">
-                <div class="col-8 mx-auto jumbotron text-center align-self-center p-3 mb-2 bg-dark text-white h-50 w-75">
+                <div class="col-8 mx-auto jumbotron text-center align-self-center p-3 mb-2 bg-dark text-white h-50 w-75 border">
                     <!--Change fonts and colors; maybe greens, blocky font-->
-                    <p class="mx-auto text-center">NINJA TURTLES COMBAT COUNTER</p>
+                    <p class="mx-auto text-center turtName">NINJA TURTLES COMBAT COUNTER</p>
                     <section>
-                        <p>The Turtles are boasting over which bro has defeated the most Foot Soldiers!  Only Master Splinter knows the truth.  Help Master Splinter stop the bickering by adding up the Turtles' scores!
+                        <!--Clarify rules; change wording, be concise-->
+                        <p class="myJumbo">The Turtles are boasting over which bro has defeated the most Foot Soldiers!  Only Master Splinter knows the truth.  Help Master Splinter stop the bickering by adding up the Turtles' scores!
                         </p>
-                        <p>The four Ninja Turtles are below.  By clicking on a turtle you will add a specific amount of points to your total score.</p>
-                        <p>You win the game by matching your total score to Master Splinter's. </p>
+                        <p class="myJumbo">The four Ninja Turtles are below.  By clicking on a turtle you will add a specific amount of points to your total score.</p>
+                        <p class="myJumbo">You win the game by matching your total score to Master Splinter's. </p>
                     </section>
                 </div>
             </div>
@@ -38,42 +41,44 @@
                 <!--four items in this row, crystals or whathaveyou, each includes specific id to call later-->
                 <!--Mobile responsiveness necessary here, currently misbehaves on any lower size remember: "col won't do"-->
                 <!--Add hover effects to images-->
+                <!--Change background color of each card-->
                 <!--ADVANCED MODE: Do arcade selection for each turtle when you learn how-->
                 <!--ADVANCED MODE: Eventually add word bubbles with delay-->
-                    <div class="col-2 mx-auto card p-3 mb-2 bg-dark text-white h-25" style="width: 18rem;">
+                    <div class="col-2 mx-auto card p-3 mb-2 bg-primary text-white h-25 border" style="width: 18rem;">
                         <img src="assets/images/leo.png" class="card-img-top w-50 h-50 mx-auto turtle" alt="...">
                             <div class="card-body">
-                                <p class="card-text text-center" id="leo">Leo!</p>
+                                <p class="card-text text-center turtName" id="leo">Leo!</p>
                             </div>
                     </div>
-                    <div class="col-2 mx-auto card p-3 mb-2 bg-dark text-white h-25" style="width: 18rem;">
+                    <div class="col-2 mx-auto card p-3 mb-2 donny text-white h-25 border" style="width: 18rem;">
                         <img src="assets/images/donny.png" class="card-img-top w-50 h-50 mx-auto turtle" alt="...">
                             <div class="card-body">
-                                <p class="card-text text-center" id="donny">Donny!</p>
+                                <p class="card-text text-center turtName" id="donny">Donny!</p>
                             </div>
                     </div>
                     <div class="row">
-                        <!--Enlarge random number to fit expanded card; call out-->
-                        <div class="col-6 mx-auto card p-3 mb-2 bg-dark text-white" style="width: 18rem;">
+                        <!--Enlarge random number to fit card-->
+                        <!--Work with formatting fix all spacing; sucks right now-->
+                        <div class="col-6 mx-auto card p-3 mb-2 bg-dark text-white border" style="width: 18rem;">
                             <img src="assets/images/splint.png" class="card-img-top h-50 w-75 mx-auto" alt="...">
                                 <div class="card-body">
                                     <p class="card-text text-center" id="splint">Master Splinter:</p>
-                                    <p class="text-center" id="random"></p>
+                                    <p class="text-center turtName" id="random"></p>
                                 </div>
                         </div>
                     </div>
-                    <div class="col-2 mx-auto card p-3 mb-2 bg-dark text-white h-25" style="width: 18rem;">
+                    <div class="col-2 mx-auto card p-3 mb-2 bg-danger text-white h-25 border" style="width: 18rem;">
                         <!--Raph has a style-px active atm, quick fix but not a perfect one-->
                         <img src="assets/images/raph.png" class="card-img-top mx-auto turtle" style="width: 130px" alt="...">
                             <div class="card-body">
-                                <p class="card-text text-center" id="raph">Raph!</p>
+                                <p class="card-text text-center turtName" id="raph">Raph!</p>
                             </div>
                     </div>
-                    <div class="col-2 mx-auto card p-3 mb-2 bg-dark text-white h-25" style="width: 18rem;">
+                    <div class="col-2 mx-auto card p-3 mb-2 bg-warning text-white h-25 border" style="width: 18rem;">
                         <!--Mike has a style-px active atm, quick fix but not a perfect one-->
                         <img src="assets/images/mike.gif" class="card-img-top mx-auto turtle" style="width: 122px" alt="...">
                             <div class="card-body">
-                                <p class="card-text text-center" id="mikey">Mikey!</p>
+                                <p class="card-text text-center turtName" id="mikey">Mikey!</p>
                             </div>
                     </div>
             </div>

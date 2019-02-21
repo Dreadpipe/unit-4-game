@@ -33,7 +33,7 @@ $(".turtle").click(); {
     let turtValue = $(this);
     turtValue = parseInt(turtValue);
     counter += turtValue;
-    // trying to console.log clicks, not getting anything
+    // trying to console.log clicks, not getting anything on click
     console.log(ninjaNum)
 
 
