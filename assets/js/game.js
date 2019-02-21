@@ -43,11 +43,11 @@ $(".turtle").click(); {
 
 // I need to create a win condition, in which the user matches the score
 // and I need to create a lose condition, in which the user exceeds the score
-
+//game will need to initialize here, win or lose
 if (counter === randomNum) {
     wins++
     //change text of jumbotron to display victory message
-    //game will need to initiate here, win or lose
+    
 }
     //specific condition for if user exceeds score
 else if (counter >= randomNum) {

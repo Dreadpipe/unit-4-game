@@ -5,7 +5,7 @@
 }
 
 /*adding personal border, will ultimately use BS, just testing;
-custom CSS conflicts*/
+custom CSS conflicting on color*/
 .border {
     border-width: 3px, black;
 }
